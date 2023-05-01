@@ -18,7 +18,7 @@ export class ContactLayoutComponent implements OnInit {
     this.formData = this.formBuilder.group({
       FullName: new FormControl('', [Validators.required]),
       EmailID: new FormControl('', [Validators.required, Validators.email]),
-      Phone: new FormControl('', [Validators.required, Validators.max(10), Validators.min(10)]),
+      Phone: new FormControl('', [Validators.required]),
       Organization: new FormControl('', [Validators.required]),
       Comment: new FormControl('', [Validators.required]),
     });
