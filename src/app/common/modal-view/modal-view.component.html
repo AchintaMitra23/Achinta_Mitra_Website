@@ -1,0 +1,17 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" *ngIf="type === 'SKILL'">{{techName}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" *ngIf="type === 'SKILL'">
+                <h3 class="head">Numbers of Projects Done : <span>{{noOfProj < 10 ? '0' + noOfProj : noOfProj}}</span></h3>
+                <h3 class="head">Total Experience : <span>{{yrsOfExp < 10 ? '0' + yrsOfExp : yrsOfExp}}</span></h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="onCloseSkillModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

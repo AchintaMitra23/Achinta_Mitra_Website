@@ -1,1 +1,181 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+html,
+body {
+    height: 100%;
+    background-color: rgba(0, 0, 50, 0.75);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 50, 0.75);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 50, 0.75);
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    padding-top: 75px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-header {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.section-header::before {
+    content: '-';
+    margin: 0 7.5px 0 7.5px;
+}
+
+.section-header::after {
+    content: '-';
+    margin: 0 7.5px 0 7.5px;
+}
+
+.section-hr {
+    color: white;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: 1;
+    width: 25%;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-not-found {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.success {
+    font-family: 'Poppins', sans-serif;
+    color: yellowgreen;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.failure {
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 575.98px) {
+    .section-header {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .section-header::before {
+        margin: 0 5px 0 5px;
+    }
+    .section-header::after {
+        margin: 0 5px 0 5px;
+    }
+    .section-hr {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .section-header {
+        font-size: 27.5px;
+        letter-spacing: 1px;
+    }
+    .section-header::before {
+        margin: 0 5px 0 5px;
+    }
+    .section-header::after {
+        margin: 0 5px 0 5px;
+    }
+    .section-hr {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-header {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .section-header::before {
+        margin: 0 5px 0 5px;
+    }
+    .section-header::after {
+        margin: 0 5px 0 5px;
+    }
+    .section-hr {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .section-header {
+        font-size: 32.5px;
+        letter-spacing: 1px;
+    }
+    .section-header::before {
+        margin: 0 5px 0 5px;
+    }
+    .section-header::after {
+        margin: 0 5px 0 5px;
+    }
+    .section-hr {
+        margin-top: 17.5px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .section-header {
+        font-size: 32.5px;
+        letter-spacing: 1px;
+    }
+    .section-header::before {
+        margin: 0 5px 0 5px;
+    }
+    .section-header::after {
+        margin: 0 5px 0 5px;
+    }
+    .section-hr {
+        margin-top: 17.5px;
+    }
+}

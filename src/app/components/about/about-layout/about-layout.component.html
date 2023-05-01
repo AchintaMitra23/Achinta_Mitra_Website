@@ -1,0 +1,55 @@
+<main class="main">
+    <h1 class="section-header">About Me</h1>
+    <hr class="section-hr"> <br><br><br>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 text-center">
+                <div class="aboutContents">
+                    <div class="aboutImage">
+                        <img src="../../../../assets/images/profile-pic.jpeg" alt="" srcset="" class="about-pic">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                <h2 class="about-head">Hello! I'm an Senior Software Engineer in Capgemini Technology Services, working on Full Stack domain on banking client project for almost over {{yrsOfExp}} yr(s). Comfortable on working with Spring Boot, Angular, AWS, Cloud and Microservices
+                    etc. I was graduated in B.TECH in Information Technology. Looking for new opportunities to contribute my experience and proceeding with learning of new and various Technologies. Consider me if there is any need for this.</h2>
+                <div class="larger-screen">
+
+                    <div class="row">
+                        <div class="col-6 mt-2 mb-2" *ngFor="let item of bioDatas">
+                            <span class="about-title">{{item.title}}</span> : <span class="about-desc">{{item.desc}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="smaller-screen mt-3 ps-3">
+
+                    <div class="row">
+                        <div class="col-12 mt-1 mb-1" *ngFor="let item of bioDatas">
+                            <span class="about-title">{{item.title}}</span> : <span class="about-desc">{{item.desc}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <a href="../../../../assets/Achinta_Mitra_Resume.pdf" class="download text-light fw-medium" download>Download Resume</a>
+                </div>
+                <ul class="social-link-ul">
+                    <li class="social-link"><a href="https://www.facebook.com/achinta.mitra.3/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-link"><a href="https://www.linkedin.com/in/achinta-mitra-4b6483171/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="social-link"><a href="https://github.com/AchintaMitra23" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="social-link"><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li class="social-link"><a href="https://twitter.com/achinta_mitra23" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center" *ngFor="let item of aboutList">
+                <div class="card border-secondary mb-3" style="max-width: 20rem; left: 50%; transform: translateX(-50%)">
+                    <div class="card-title">{{item.title}}</div>
+                    <div class="card-body text-secondary">
+                        <h5 class="card-number">{{item.number}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

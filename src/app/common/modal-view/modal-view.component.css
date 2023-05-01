@@ -1,0 +1,47 @@
+.modal-body .head,
+.modal-title {
+    color: black;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18.5px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal-body .head span {
+    color: brown;
+}
+
+@media (max-width: 575.98px) {
+    .modal-body .head,
+    .modal-title {
+        font-size: 15px;
+    }
+    .modal-body .head span {
+        color: brown;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .modal-body .head,
+    .modal-title {
+        font-size: 15px;
+    }
+    .modal-body .head span {
+        color: brown;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .modal-body .head,
+    .modal-title {
+        font-size: 15px;
+    }
+    .modal-body .head span {
+        color: brown;
+    }
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 1399.98px) {}

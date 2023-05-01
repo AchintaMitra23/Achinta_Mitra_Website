@@ -1,0 +1,295 @@
+.contact-title {
+    color: yellowgreen;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form label {
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+    letter-spacing: 1px;
+}
+
+form input,
+form textarea {
+    margin: 10px 0 20px 0;
+    font-size: 18.5px;
+    color: white;
+    background: transparent;
+    border-bottom: 2px solid white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    outline: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+form input:hover,
+form textarea:hover,
+form input:focus,
+form textarea:focus,
+form input:active,
+form textarea:active {
+    color: black;
+    background: white;
+    box-shadow: none;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.submit {
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-left: 25px;
+}
+
+.info {
+    font-size: 18.5px;
+    margin: 100px 0 0 40px;
+}
+
+::placeholder {
+    color: grey;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: red;
+}
+
+::-ms-input-placeholder {
+    color: red;
+}
+
+.form-group {
+    margin: 0 25px 0 25px;
+    padding: 0;
+}
+
+.group {
+    display: inline-flex;
+    width: 100%;
+}
+
+.solo {
+    width: 50%;
+}
+
+.map {
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    opacity: 0.75;
+    transition: all 0.5s ease-in-out;
+}
+
+.map:hover {
+    opacity: 1;
+    box-shadow: 0 0 5px 5px grey;
+}
+
+@media (max-width: 575.98px) {
+    .contact-title {
+        font-size: 20px;
+    }
+    form label {
+        font-size: 15px;
+        margin: 10px 0 0 0;
+    }
+    form input,
+    form textarea {
+        font-size: 15px;
+        border-bottom: 2px solid white;
+    }
+    .submit {
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .info {
+        font-size: 12.5px;
+        margin: 50px 0 0 25px;
+    }
+    .form-group {
+        margin: 0 0 0 15px;
+        padding: 0 20px 0 0;
+    }
+    .group {
+        display: block;
+        margin: 0 10px 0 0;
+        width: 100%;
+    }
+    .solo {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        height: 250px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contact-title {
+        font-size: 20px;
+    }
+    form label {
+        font-size: 15px;
+        margin: 10px 0 0 0;
+    }
+    form input,
+    form textarea {
+        font-size: 15px;
+        border-bottom: 2px solid white;
+    }
+    .submit {
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .info {
+        font-size: 12.5px;
+        margin: 50px 0 0 25px;
+    }
+    .form-group {
+        margin: 0 0 0 15px;
+        padding: 0 20px 0 0;
+    }
+    .group {
+        display: block;
+        margin: 0 10px 0 0;
+        width: 100%;
+    }
+    .solo {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        height: 250px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contact-title {
+        font-size: 20px;
+    }
+    form label {
+        font-size: 15px;
+        margin: 10px 0 0 0;
+    }
+    form input,
+    form textarea {
+        font-size: 15px;
+        border-bottom: 2px solid white;
+    }
+    .submit {
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .info {
+        font-size: 12.5px;
+        margin: 50px 0 0 25px;
+    }
+    .form-group {
+        margin: 0 0 0 15px;
+        padding: 0 20px 0 0;
+    }
+    .group {
+        display: inline-flex;
+        margin: 0 10px 0 0;
+        width: 100%;
+    }
+    .solo {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        height: 500px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .contact-title {
+        font-size: 20px;
+    }
+    form label {
+        font-size: 15px;
+        margin: 10px 0 0 0;
+    }
+    form input,
+    form textarea {
+        font-size: 15px;
+        border-bottom: 2px solid white;
+    }
+    .submit {
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .info {
+        font-size: 12.5px;
+        margin: 50px 0 0 25px;
+    }
+    .form-group {
+        margin: 0 0 0 15px;
+        padding: 0 20px 0 0;
+    }
+    .group {
+        display: inline-flex;
+        margin: 0 10px 0 0;
+        width: 100%;
+    }
+    .solo {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        height: 500px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .contact-title {
+        font-size: 20px;
+    }
+    form label {
+        font-size: 15px;
+        margin: 10px 0 0 0;
+    }
+    form input,
+    form textarea {
+        font-size: 15px;
+        border-bottom: 2px solid white;
+    }
+    .submit {
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .info {
+        font-size: 12.5px;
+        margin: 50px 0 0 25px;
+    }
+    .form-group {
+        margin: 0 0 0 15px;
+        padding: 0 20px 0 0;
+    }
+    .group {
+        display: inline-flex;
+        margin: 0 10px 0 0;
+        width: 100%;
+    }
+    .solo {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        height: 500px;
+        margin-top: 50px;
+    }
+}

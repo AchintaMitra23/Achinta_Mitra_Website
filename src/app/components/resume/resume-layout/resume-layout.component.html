@@ -1,0 +1,50 @@
+<main class="main">
+    <h1 class="section-header">Experiences &amp; Educations</h1>
+    <hr class="section-hr"> <br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center experience">
+                <div class="container-experience">
+                    <i class="fa-solid fa-briefcase fa-bounce icon"></i>
+                    <div class="rightbox">
+                        <div class="rb-container">
+                            <ul class="rb" *ngFor="let item of experiences">
+                                <li class="rb-item" ng-repeat="itembx">
+                                    <div class="company">{{item.company}}</div>
+                                    <ul class="rb-specs" *ngFor="let spec of item.specs">
+                                        <li ng-repeat="itembx" style="text-align: left;">
+                                            <div class="designation">{{spec.designation}}</div>
+                                            <div class="skills"><span class="title">{{expCols[0]}}</span> : {{spec.skills}}</div>
+                                            <div class="description"><span class="title">{{expCols[1]}}</span> : {{spec.roles}}</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center education">
+                <div class="container-education">
+                    <i class="fa-solid fa-school fa-bounce icon"></i>
+                    <div class="rightbox">
+                        <div class="rb-container">
+                            <ul class="rb" *ngFor="let item of educations">
+                                <li class="rb-item" ng-repeat="itembx">
+                                    <div class="institution">{{item.institution}}</div>
+                                    <ul class="rb-specs" *ngFor="let spec of item.standards">
+                                        <li ng-repeat="itembx" style="text-align: left;">
+                                            <div class="medium">{{spec.medium}}</div>
+                                            <div class="marks"><span class="title">{{eduCols[0]}}</span> : {{spec.marks}}</div>
+                                            <div class="activities"><span class="title">{{eduCols[1]}}</span> : {{spec.activities}}</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

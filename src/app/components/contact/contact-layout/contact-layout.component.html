@@ -1,0 +1,48 @@
+<main class="main">
+    <h1 class="section-header">Contact Me</h1>
+    <hr class="section-hr"> <br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h2 class="contact-title text-center mb-5">Let's Gets Connected...</h2>
+                <div class="row">
+                    <div class="col-md-12 offset-md-4 form-group">
+                        <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)" _subject="Email from website" action="https://mailthis.to/achintamitra23@gmail.com">
+                            <div class="form-group group">
+                                <div class="form-group solo">
+                                    <label for="Email">Email</label>
+                                    <input type="email" class="form-control" name="emailID" placeholder="Enter your email" formControlName="EmailID">
+                                </div>
+                                <div class="form-group solo">
+                                    <label for="FullName">Full Name</label>
+                                    <input type="text" class="form-control" name="fullName" placeholder="Enter your full name" formControlName="FullName">
+                                </div>
+                            </div>
+                            <div class="form-group group">
+                                <div class="form-group solo">
+                                    <label for="Organization">Organization</label>
+                                    <input type="text" class="form-control" name="organization" placeholder="Enter your organization" formControlName="Organization">
+                                </div>
+                                <div class="form-group solo">
+                                    <label for="Phone">Phone</label>
+                                    <input type="tel" class="form-control" name="phone" placeholder="Enter your phone" formControlName="Phone">
+                                </div>
+                            </div>
+                            <!-- <input type="hidden" name="_subject" value="Contact form submitted"> -->
+                            <div class="form-group">
+                                <label for="comment">Comment</label>
+                                <textarea rows="5" class="form-control" formControlName="Comment" name="comment" placeholder="Write your Comment"></textarea>
+                            </div>
+                            <button type="submit" class="submit btn btn-success" [disabled]="!formData.valid">Submit</button>
+                            <small id="emailHelp" class="form-text text-secondary info">Information is only one to one</small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.862080072894!2d88.35748997662613!3d22.58426113254052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b459da76ed%3A0xa66cd4a9d3ba776!2sCIT%20Building%2C%20Jorasanko%20Abashan!5e0!3m2!1sen!2sin!4v1682910833992!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+        </div>
+    </div>
+</main>

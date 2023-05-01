@@ -1,0 +1,40 @@
+<main class="main">
+    <h1 class="section-header">My Works</h1>
+    <hr class="section-hr"> <br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <h3 class="proj-title text-center">Projects</h3>
+            <ul class="proj-ul text-center mt-3">
+                <li class="proj-li"><a (click)="filterProj('ALL')">All</a></li>
+                <li class="proj-li"><a (click)="filterProj('Android')">Android</a></li>
+                <li class="proj-li"><a (click)="filterProj('Data Science')">Data Science</a></li>
+                <li class="proj-li"><a (click)="filterProj('Full Stack')">Full Stack</a></li>
+                <li class="proj-li"><a (click)="filterProj('Web App')">Web App</a></li>
+            </ul>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center mt-2 mb-2" *ngFor="let item of tempProjects">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-name">{{item.projName}}</h5>
+                        <h6 class="card-time mb-4 mt-4">{{item.duration}}</h6>
+                        <p class="card-tech"><span>Tech Used : </span> {{item.techUsed}}</p>
+                        <p class="card-desc"><span>Description : </span> {{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h3 class="proj-title text-center mb-5">Certificates</h3>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center mt-2 mb-2" *ngFor="let item of certificates">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-name">{{item.certName}}</h5>
+                        <div class="mb-5 mt-5">
+                            <h6 class="card-time issueBy"><span>ISSUED BY : </span> {{item.issuedBy}}</h6>
+                            <h6 class="card-time issueDt"><span>ISSUED DATE : </span> {{item.issuedDt}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,284 @@
+.proj-title {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.card {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 2px 2px gray inset;
+}
+
+.card-body {
+    background: transparent;
+    color: white;
+}
+
+.card-name {
+    font-size: 25px;
+    color: yellowgreen;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 25px;
+    padding: 0 5px 0 5px;
+}
+
+.card-time {
+    font-size: 18.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: grey;
+    line-height: 20px;
+}
+
+.card-tech,
+.card-desc {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+.card-tech span,
+.card-desc span,
+.card-time span {
+    font-size: 18.5px;
+    font-weight: 600;
+    color: goldenrod;
+    letter-spacing: 1.5px;
+}
+
+.proj-ul {
+    display: inline-flex;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.proj-li {
+    list-style: none;
+    margin: 0 10px 0 10px;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 0 0 2px 2px gray inset;
+    border-radius: 25px;
+    transition: all .5s linear;
+    background-color: white;
+}
+
+.proj-li:hover {
+    background-color: transparent;
+}
+
+.proj-li:hover a {
+    color: white;
+}
+
+.proj-li a {
+    font-size: 18.5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.issueBy,
+.issueDt {
+    color: white;
+}
+
+@media (max-width: 575.98px) {
+    .proj-title {
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+    .card-name {
+        font-size: 18.5px;
+        line-height: 25px;
+        margin-top: 10px;
+        padding: 0 2.5px 0 2.5px;
+    }
+    .card-time {
+        font-size: 13px;
+    }
+    .card-tech,
+    .card-desc {
+        font-size: 12.5px;
+        line-height: 15.5px;
+    }
+    .card-tech span,
+    .card-desc span,
+    .card-time span {
+        font-size: 12.5px;
+        letter-spacing: 1px;
+    }
+    .proj-li {
+        align-self: center;
+        margin: 0 2.5px 0 2.5px;
+        padding: 5px 10px 5px 10px;
+    }
+    .proj-li a {
+        font-size: 12.5px;
+        transition: all .5s linear;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .proj-title {
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+    .card-name {
+        font-size: 18.5px;
+        line-height: 25px;
+        margin-top: 10px;
+        padding: 0 2.5px 0 2.5px;
+    }
+    .card-time {
+        font-size: 13px;
+    }
+    .card-tech,
+    .card-desc {
+        font-size: 12.5px;
+        line-height: 15.5px;
+    }
+    .card-tech span,
+    .card-desc span,
+    .card-time span {
+        font-size: 12.5px;
+        letter-spacing: 1px;
+    }
+    .proj-li {
+        align-self: center;
+        margin: 0 2.5px 0 2.5px;
+        padding: 5px 10px 5px 10px;
+    }
+    .proj-li a {
+        font-size: 12.5px;
+        transition: all .5s linear;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .proj-title {
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+    .card-name {
+        font-size: 18.5px;
+        line-height: 25px;
+        margin-top: 10px;
+        padding: 0 2.5px 0 2.5px;
+    }
+    .card-time {
+        font-size: 13px;
+    }
+    .card-tech,
+    .card-desc {
+        font-size: 12.5px;
+        line-height: 15.5px;
+    }
+    .card-tech span,
+    .card-desc span,
+    .card-time span {
+        font-size: 12.5px;
+        letter-spacing: 1px;
+    }
+    .proj-li {
+        align-self: center;
+        margin: 0 2.5px 0 2.5px;
+        padding: 5px 10px 5px 10px;
+    }
+    .proj-li a {
+        font-size: 12.5px;
+        transition: all .5s linear;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .proj-title {
+        font-size: 20px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card-name {
+        font-size: 18.5px;
+        line-height: 25px;
+        margin-top: 10px;
+        padding: 0 2.5px 0 2.5px;
+    }
+    .card-time {
+        font-size: 13px;
+    }
+    .card-tech,
+    .card-desc {
+        font-size: 12.5px;
+        line-height: 15.5px;
+    }
+    .card-tech span,
+    .card-desc span,
+    .card-time span {
+        font-size: 12.5px;
+        letter-spacing: 1px;
+    }
+    .proj-li {
+        align-self: center;
+        margin: 0 2.5px 0 2.5px;
+        padding: 5px 10px 5px 10px;
+    }
+    .proj-li a {
+        font-size: 12.5px;
+        transition: all .5s linear;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .proj-title {
+        font-size: 20px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card-name {
+        font-size: 18.5px;
+        line-height: 25px;
+        margin-top: 10px;
+        padding: 0 2.5px 0 2.5px;
+    }
+    .card-time {
+        font-size: 13px;
+    }
+    .card-tech,
+    .card-desc {
+        font-size: 12.5px;
+        line-height: 15.5px;
+    }
+    .card-tech span,
+    .card-desc span,
+    .card-time span {
+        font-size: 12.5px;
+        letter-spacing: 1px;
+    }
+    .proj-li {
+        align-self: center;
+        margin: 0 2.5px 0 2.5px;
+        padding: 5px 10px 5px 10px;
+    }
+    .proj-li a {
+        font-size: 12.5px;
+        transition: all .5s linear;
+    }
+}
