@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title: string = 'Achinta_Mitra_Website';
+  @ViewChild('myNav') public myNav!: ElementRef;
+
+  public openNav() {
+    this.myNav.nativeElement.style.width = '25%';
+  }
+
+  public closeNav() {
+    this.myNav.nativeElement.style.width = '0%';
+  }
 }

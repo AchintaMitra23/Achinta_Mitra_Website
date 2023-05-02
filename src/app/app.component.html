@@ -16,6 +16,18 @@
         </div>
     </div>
 </nav>
+<div #myNav id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a class="nav-link-overlay" routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        <a class="nav-link-overlay" routerLink="about" routerLinkActive="active">About</a>
+        <a class="nav-link-overlay" routerLink="resume" routerLinkActive="active">Resume</a>
+        <a class="nav-link-overlay" routerLink="skills" routerLinkActive="active">Skills</a>
+        <a class="nav-link-overlay" routerLink="projects" routerLinkActive="active">Works</a>
+        <a class="nav-link-overlay" routerLink="contact" routerLinkActive="active">Contacts</a>
+    </div>
+</div>
+<span class="openbtn" (click)="openNav()"><i class="fa-solid fa-bars fa-beat bars-overlay"></i></span>
 <router-outlet>
 
 </router-outlet>
